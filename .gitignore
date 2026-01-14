@@ -1,0 +1,18 @@
+# Ignore Data
+data/
+*.zip
+*.csv
+
+# Ignore Large Models
+*.h5
+*.keras
+models/
+
+# Ignore Python Cache
+__pycache__/
+*.pyc
+
+# Ignore Environment
+.env
+venv/
+.DS_Store

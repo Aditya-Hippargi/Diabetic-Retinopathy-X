@@ -1,0 +1,28 @@
+# --- Core Data Science ---
+numpy                   # Math for image matrices
+pandas                  # Handling the CSV dataframes
+scikit-learn            # For splitting data & calculating metrics (Confusion Matrix)
+tqdm                    # Progress bars (so you know your loops aren't frozen)
+
+# --- Image Processing & Augmentation ---
+opencv-python           # The "Ben Graham" preprocessing tools
+pillow                  # Basic image loading
+albumentations          # Professional-grade image augmentation (flips/rotations)
+
+# --- Deep Learning (The Brain) ---
+tensorflow              # The main framework (includes Keras)
+vit-keras               # Wrapper to easily use Vision Transformers in Keras
+tf-keras-vis            # For Grad-CAM (Heatmaps) & visualization
+
+# --- Web Application ---
+streamlit               # To build the website interface
+watchdog                # Helper for Streamlit to auto-reload when code changes
+
+# --- Visualization & Reporting ---
+matplotlib              # Basic graphing
+seaborn                 # Prettier statistical graphs (for your report)
+
+# --- MLOps & Tools ---
+wandb                   # Weights & Biases (Track your experiments like a pro)
+kaggle                  # To download datasets via API
+python-dotenv           # To manage secrets (like your Kaggle API key)
