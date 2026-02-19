@@ -185,12 +185,12 @@ def ben_graham_preprocessing(
     # Step 1: Circle crop and remove black borders
     img = circle_crop(img, sigmaX=sigmaX)
     
-    # Step 2: Resize to uniform dimensions
-    img = cv2.resize(img, output_size, interpolation=cv2.INTER_AREA)
-    
-    # Step 3: Subtract local average (optional)
+    # Step 2: Subtract local average (optional)
     if apply_local_avg:
         img = subtract_local_average(img, kernel_size=51)
+    
+    # Step 3: Resize to uniform dimensions
+    img = cv2.resize(img, output_size, interpolation=cv2.INTER_AREA)
     
     # Step 4: Apply CLAHE (optional)
     if apply_clahe_flag:
